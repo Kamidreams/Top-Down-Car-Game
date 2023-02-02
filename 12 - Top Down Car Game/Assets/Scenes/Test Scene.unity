@@ -146,6 +146,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 818
       objectReference: {fileID: 0}
+    - target: {fileID: 3206575550312613118, guid: 095488037eb6cfb4a85bb4f39086b4f9, type: 3}
+      propertyPath: m_Name
+      value: Pause Text
+      objectReference: {fileID: 0}
     - target: {fileID: 3206575550971165950, guid: 095488037eb6cfb4a85bb4f39086b4f9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -232,7 +236,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3206575550971165951, guid: 095488037eb6cfb4a85bb4f39086b4f9, type: 3}
       propertyPath: m_Name
-      value: Scene Title
+      value: Pause Title
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206575550971165951, guid: 095488037eb6cfb4a85bb4f39086b4f9, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3206575550992315414, guid: 095488037eb6cfb4a85bb4f39086b4f9, type: 3}
+      propertyPath: m_Name
+      value: Pause Title Background
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 095488037eb6cfb4a85bb4f39086b4f9, type: 3}
@@ -2227,7 +2239,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1984018421
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2853,6 +2865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tree
       objectReference: {fileID: 0}
+    - target: {fileID: 5287661710058000974, guid: 2eb6929966ab60443b9fd1e4b6ee7998, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5287661710058000975, guid: 2eb6929966ab60443b9fd1e4b6ee7998, type: 3}
       propertyPath: m_RootOrder
       value: 22
@@ -2906,6 +2922,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 730765644945944114, guid: 5abd3815c1d0b964db6435c253c47a41, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5537836439255905660, guid: 5abd3815c1d0b964db6435c253c47a41, type: 3}
       propertyPath: m_RootOrder
       value: 19
@@ -3377,6 +3397,10 @@ PrefabInstance:
     - target: {fileID: 8570357602725177549, guid: 06860903479c70a4894ce09a8871bf59, type: 3}
       propertyPath: m_Name
       value: Sewage Cover Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 8570357602725177550, guid: 06860903479c70a4894ce09a8871bf59, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8570357602725177551, guid: 06860903479c70a4894ce09a8871bf59, type: 3}
       propertyPath: m_RootOrder
