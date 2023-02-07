@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8060039169046590197}
   - component: {fileID: 8060039169046590196}
   - component: {fileID: 8060039169046590202}
+  - component: {fileID: 21730297}
+  - component: {fileID: 21730298}
   m_Layer: 0
   m_Name: Gas Tank
   m_TagString: Untagged
@@ -74,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 8cfab01f8fecfa7438fc480177a298ab, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 9d711291233d747489bdfbb7830f6614, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -111,3 +113,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.4359459, y: 2.1097727}
   m_EdgeRadius: 0
+--- !u!95 &21730297
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8060039169046590199}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b20e2e65253b1194fabe4f98c24d3d8d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &21730298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8060039169046590199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f802b4c62c3b9f14d903744d9e7d5d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 1

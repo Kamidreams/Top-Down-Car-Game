@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Background
   - Overlay
+  - Obstacle
   layers:
   - Default
   - TransparentFX

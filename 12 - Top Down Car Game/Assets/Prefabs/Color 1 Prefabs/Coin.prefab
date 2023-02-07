@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2598664861430836674}
   - component: {fileID: 2598664861430836675}
   - component: {fileID: 2598664861430836677}
+  - component: {fileID: 1910388853}
+  - component: {fileID: 1910388854}
   m_Layer: 0
   m_Name: Coin
   m_TagString: Untagged
@@ -101,3 +103,36 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.815
+--- !u!95 &1910388853
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598664861430836672}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fd7dc440833f1f0458b1b8ebcccb80ff, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1910388854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2598664861430836672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f802b4c62c3b9f14d903744d9e7d5d72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _value: 1
