@@ -31,12 +31,29 @@ public class LevelManager : MonoBehaviour
 
     public void GameOver()
     {
-        Time.timeScale = 0;
+        Time.timeScale = 1;
         GameOverPanel.SetActive(true);
     }
 
     public void ReplayButtonPressed()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void HomeButtonPressed()
+    {
+        SceneManager.LoadScene("Main Menu");
+    }
+
+    public void PauseButtonPressed()
+    {
+        Time.timeScale = 0;
+        PausePanel.SetActive(true);
+    }
+
+    public void PlayButtonPressed()
+    {
+        Time.timeScale = 1;
+        PausePanel.SetActive(false);
     }
 }
