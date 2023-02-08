@@ -12,7 +12,6 @@ public class LevelManager : MonoBehaviour
 
     public GameObject GameOverPanel;
 
-    //Starts before the start function
     void Awake()
     {
         Instance = this;
@@ -34,5 +33,10 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = 0;
         GameOverPanel.SetActive(true);
+    }
+
+    public void ReplayButtonPressed()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

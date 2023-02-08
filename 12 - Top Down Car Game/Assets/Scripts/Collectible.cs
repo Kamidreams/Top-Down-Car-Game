@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Collectible : MonoBehaviour
 {
-    [SerializeField] private int _value = 0;
+    [SerializeField] private int _value = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -24,7 +24,6 @@ public class Collectible : MonoBehaviour
         {
             Debug.Log("I've was hit by the player!");
             Destroy(this.gameObject);
-            //update the collectible count
         }
     }
 }

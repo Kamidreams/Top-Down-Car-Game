@@ -37,7 +37,7 @@ public class CarController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if(other.gameObject.CompareTage("Obstacle"))
+        if(other.gameObject.CompareTag("Obstacle"))
         {
             LevelManager.Instance.GameOver();
         }
