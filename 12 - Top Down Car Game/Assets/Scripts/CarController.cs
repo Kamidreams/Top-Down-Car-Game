@@ -50,4 +50,17 @@ public class CarController : MonoBehaviour
             LevelManager.Instance.GameOver();
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if(other.gameObject.CompareTag("Start Line"))
+        {
+            //code here
+        }
+
+        if(other.gameObject.CompareTag("Finish Line"))
+        {
+            //code here
+        }
+    }
 }
