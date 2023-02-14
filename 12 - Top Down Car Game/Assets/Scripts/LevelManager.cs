@@ -22,6 +22,8 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private int _gasAmount = 10;
     
+    [SerializeField] private int _currentGasAmount = 10;
+    
     [SerializeField] private bool _isGameActive = false;
 
     void Awake()
@@ -86,8 +88,16 @@ public class LevelManager : MonoBehaviour
 
     public void UpdateGasAmount(int amount)
     {
-        _gasAmount += amount;
-        GasAmountText.text = _gasAmount.ToString();
+        if(_currentGasAmount < _gasAmount)
+        {
+            _gasAmount += amount;
+            GasAmountText.text = _currentGasAmount.ToString(); // ToString is a conversion
+        }
+    }
+
+    public void StartGasMeter()
+    {
+        StartCoroutine(UpdateGasMeter());
     }
 
     IEnumerator StartCountdownTimer()
@@ -107,5 +117,15 @@ public class LevelManager : MonoBehaviour
         _isGameActive = true;
         yield return new WaitForSeconds(1f);
         CountdownTimerText.gameObject.SetActive(false);
+    }
+
+    IEnumerator UpdateGasMeter()
+    {
+        while(_currentGasAmount > 0)
+        {
+            yield return new WaitForSeconds(3f);
+            _currentGasAmount--;
+            GasAmountText.text = _currentGasAmount.ToString();
+        }
     }
 }

@@ -4450,10 +4450,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 8247898501767397584, guid: 04380d2af84dfae4a94511bb1dd1ff38, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8247898501767397585, guid: 04380d2af84dfae4a94511bb1dd1ff38, type: 3}
       propertyPath: m_Name
       value: Finish Line
@@ -4554,14 +4550,6 @@ PrefabInstance:
     - target: {fileID: 8366994780914591542, guid: ed4b8d2127b3cb04fb88ec444b4bfa20, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366994780914591543, guid: ed4b8d2127b3cb04fb88ec444b4bfa20, type: 3}
-      propertyPath: m_SortingOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8366994780914591544, guid: ed4b8d2127b3cb04fb88ec444b4bfa20, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8366994780914591545, guid: ed4b8d2127b3cb04fb88ec444b4bfa20, type: 3}
       propertyPath: m_Name

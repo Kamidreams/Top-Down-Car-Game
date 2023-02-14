@@ -9,6 +9,8 @@ TagManager:
   - Obstacle
   - Coin
   - Gas Can
+  - Start Line
+  - Finish Line
   layers:
   - Default
   - TransparentFX
