@@ -6,6 +6,8 @@ public class CarController : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5f;
 
+    [SerializeField] private float _boostAmount = 20f;
+
     [SerializeField] private float _sideMoveSpeed = 5f;
 
     [SerializeField] private float _xRange = 4;
@@ -51,7 +53,7 @@ public class CarController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Start Line"))
         {
@@ -62,5 +64,19 @@ public class CarController : MonoBehaviour
         {
             //code here
         }
+
+        if(other.gameObject.CompareTag("Boost"))
+        {
+            StartCoroutine(SetBoost());
+        }
+    }
+
+    IEnumerator SetBoost()
+    {
+        float currentSpeed = _moveSpeed;
+        _moveSpeed = currentSpeed + _boostAmount;
+        // currentSpeed = currentSpeed + _boostAmount;
+        yield return new WaitForSeconds(3f);
+        _moveSpeed = currentSpeed;
     }
 }
