@@ -127,5 +127,7 @@ public class LevelManager : MonoBehaviour
             _currentGasAmount--;
             GasAmountText.text = _currentGasAmount.ToString();
         }
+
+        GameOver();
     }
 }
