@@ -58,6 +58,12 @@ public class LevelManager : MonoBehaviour
         GameOverPanel.SetActive(true);
     }
 
+    public void Winner()
+    {
+        Time.timeScale = 0;
+        WinnerPanel.SetActive(true);
+    }
+
     public void ReplayButtonPressed()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);

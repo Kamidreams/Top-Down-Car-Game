@@ -70,7 +70,7 @@ public class CarController : MonoBehaviour
         if(other.gameObject.CompareTag("Finish Line"))
         {
             _crossedFinishLine = true;
-            LevelManager.Instance.GameOver();
+            LevelManager.Instance.Winner();
         }
 
         if(other.gameObject.CompareTag("Boost"))
