@@ -221,6 +221,10 @@ MonoBehaviour:
   - {fileID: 3867480799074108834, guid: 9346067548a9a5d49902b9652593a5b5, type: 3}
   - {fileID: 4670771046656280337, guid: dece4d67147b4774eb0f3cb826a28779, type: 3}
   - {fileID: 2077060940969105308, guid: 29d3de6f127fc644fbb79b0eed90d2c0, type: 3}
+  - {fileID: 390623539831700032, guid: 8f52b525c11dcb540a63dbc1f289f80d, type: 3}
+  - {fileID: 7656769737429776831, guid: 2996e6380a362a746ba0d3afabbf7db5, type: 3}
+  - {fileID: 6164099900532330062, guid: 252ba34a807dade4aa6ca2e43f41d48c, type: 3}
+  - {fileID: 2077060940969105308, guid: 29d3de6f127fc644fbb79b0eed90d2c0, type: 3}
 --- !u!4 &132320725
 Transform:
   m_ObjectHideFlags: 0
@@ -627,15 +631,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7912478674964663736, guid: 55c7c33a8f29f7f4c946e24cce956d59, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.78425294
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7912478674964663736, guid: 55c7c33a8f29f7f4c946e24cce956d59, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.815051
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7912478674964663736, guid: 55c7c33a8f29f7f4c946e24cce956d59, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.231514
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7912478674964663736, guid: 55c7c33a8f29f7f4c946e24cce956d59, type: 3}
       propertyPath: m_LocalRotation.w
@@ -668,10 +672,6 @@ PrefabInstance:
     - target: {fileID: 7912478674964663739, guid: 55c7c33a8f29f7f4c946e24cce956d59, type: 3}
       propertyPath: m_Name
       value: Road Segment
-      objectReference: {fileID: 0}
-    - target: {fileID: 7912478674964663739, guid: 55c7c33a8f29f7f4c946e24cce956d59, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55c7c33a8f29f7f4c946e24cce956d59, type: 3}
