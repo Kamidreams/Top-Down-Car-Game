@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8366994780914591543}
   - component: {fileID: 8366994780914591544}
   m_Layer: 0
-  m_Name: Sart Line
+  m_Name: Start Line
   m_TagString: Start Line
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
