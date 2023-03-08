@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameModes.unity
     guid: 88f7763964e03484293a24057d75bd73
+  - enabled: 1
+    path: Assets/Scenes/Course 1.unity
+    guid: 3e127f0e94a67d14b86069ac36ec7615
+  - enabled: 1
+    path: Assets/Scenes/Course 2.unity
+    guid: b1522b647bfea0049aee2172c3e3c5c1
+  - enabled: 1
+    path: Assets/Scenes/Course 3.unity
+    guid: d308e285d7b315c4e877e310cb0a605c
+  - enabled: 1
+    path: Assets/Scenes/Single Race.unity
+    guid: 6284ca4914b251547a75c769d094acf5
   m_configObjects: {}
