@@ -60,12 +60,14 @@ public class LevelManager : MonoBehaviour
     {
         Time.timeScale = 0;
         GameOverPanel.SetActive(true);
+        GameManager.Instance.SetCoinCount(_coinsCollected);
     }
 
     public void Winner()
     {
         Time.timeScale = 0;
         WinnerPanel.SetActive(true);
+        GameManager.Instance.SetCoinCount(_coinsCollected);
     }
 
     public void ReplayButtonPressed()
