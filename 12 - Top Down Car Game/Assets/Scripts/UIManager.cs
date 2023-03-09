@@ -6,13 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
+     public TextMeshProUGUI GlobalCoinCountText;
+
     // Start is called before the first frame update
     void Start()
     {
         if(GameObject.Find("Coin Count Text") != null)
         {
-            Debug.Log("I found the Coin Count Text");
-            GameObject.find("Coin Count Text").GetComponent<TextMeshProUGUI>;
+            GlobalCoinCountText.text = GameManager.Instance.GetCoinCount().ToString();
         }
         else
         {
