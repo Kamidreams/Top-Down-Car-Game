@@ -1579,9 +1579,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 59272453}
     - target: {fileID: 1220518814720195509, guid: 10ac3a1484071f94d9c592c6f35ad118, type: 3}
+      propertyPath: BestDistanceLost
+      value: 
+      objectReference: {fileID: 1089254068}
+    - target: {fileID: 1220518814720195509, guid: 10ac3a1484071f94d9c592c6f35ad118, type: 3}
       propertyPath: CountdownTimerText
       value: 
       objectReference: {fileID: 59272454}
+    - target: {fileID: 1220518814720195509, guid: 10ac3a1484071f94d9c592c6f35ad118, type: 3}
+      propertyPath: CurrentDistanceLost
+      value: 
+      objectReference: {fileID: 1089254069}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10ac3a1484071f94d9c592c6f35ad118, type: 3}
 --- !u!1001 &742506347
@@ -2308,6 +2316,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2868607171546970562, guid: 7999d1c9882a46244b37e6618c3dcf26, type: 3}
   m_PrefabInstance: {fileID: 1079061711}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1089254068 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4261233370913587242, guid: 933b847567c927748891ec007dcd56e1, type: 3}
+  m_PrefabInstance: {fileID: 59272449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1089254069 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4261233372042289026, guid: 933b847567c927748891ec007dcd56e1, type: 3}
+  m_PrefabInstance: {fileID: 59272449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1099653053
 PrefabInstance:
   m_ObjectHideFlags: 0

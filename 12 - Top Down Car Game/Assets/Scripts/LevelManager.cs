@@ -14,10 +14,25 @@ public class LevelManager : MonoBehaviour
     public GameObject WinnerPanel;
 
     public TextMeshProUGUI CoinCountText;
+
     public TextMeshProUGUI GasAmountText;
+
     public TextMeshProUGUI CountdownTimerText;
 
+    public TextMeshProUGUI CurrentDistanceWon, CurrentDistanceLost;
+
+    public TextMeshProUGUI BestDistanceWon, BestDistanceLost;
+
+
     public Slider GasMeterSlider;
+
+    public Transform PlayerCar;
+
+
+    [SerializeField] private Vector2 _startPos, _endPos;
+
+    private float _distanceTraveled;
+
 
     [SerializeField] private int _countdownTimer = 3;
 
@@ -37,6 +52,7 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        _startPos = PlayerCar.position;
         Time.timeScale = 1;
         CoinCountText.text = _coinsCollected.ToString();
         GasAmountText.text = _gasAmount.ToString();
@@ -58,6 +74,8 @@ public class LevelManager : MonoBehaviour
 
     public void GameOver()
     {
+        _endPos = PlayerCar.position;
+        CalculateDistanceTraveled();
         Time.timeScale = 0;
         GameOverPanel.SetActive(true);
         GameManager.Instance.SetCoinCount(_coinsCollected);
@@ -65,9 +83,22 @@ public class LevelManager : MonoBehaviour
 
     public void Winner()
     {
+        _endPos = PlayerCar.position;
+        CalculateDistanceTraveled();
         Time.timeScale = 0;
         WinnerPanel.SetActive(true);
         GameManager.Instance.SetCoinCount(_coinsCollected);
+    }
+
+    public void CalculateDistanceTraveled()
+    {
+        float totalDistance = _endPos.y - _startPos.y;
+        GameManager.Instance.SetBestDistanceTraveled(totalDistance);
+        float bestDistance = GameManager.Instance.GetBestDistanceTravled();
+        CurrentDistanceLost.text = ((int)totalDistance).ToString();
+        CurrentDistanceWon.text = ((int)totalDistance).ToString();
+        BestDistanceLost.text = ((int)bestDistance).ToString();
+        BestDistanceWon.text = ((int)bestDistance).ToString();
     }
 
     public void ReplayButtonPressed()
